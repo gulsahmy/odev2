@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</title>
+    <style>
+       
+        #baslik{
+            text-align: center;
+        }
+        #grup1{
+            margin-bottom: 5px;
+                
+        }
+
+        #grup1 .isim {
+            margin-left: 5.5rem;
+        }
+        #grup1 .lastname{
+            margin-left: 5rem;
+        }    
+        #grup1 .age{
+            margin-left: 4.5rem;
+        }    
+        #grup1 .email{
+            margin-left: 4.8rem;
+        }    
+        #grup1 .foto{
+            margin-left: 2.2rem;
+        }    
+        #grup2 .birbeş{
+            margin-left: 1rem;
+        }    
+        #grup2 .altı{
+            margin-left: 8.3rem;
+        }    
+        #grup2 .onbir{
+            margin-left: 8.3rem;
+        }    
+        #grup2 .onbeş{
+            margin-left: 8.3rem;
+        }    
+            
+        .pro{
+            margin-left: 0.9rem;
+        }
+        
+        
+    </style>
+</head>
+<body>
+        <h1 id="baslik">ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
+        
+
+    <form action="./result.html" method="get">
+
+    <fieldset>
+        <legend><b>Sözleşme Onay</b></legend>
+        <div>
+            
+            <input type="checkbox" name="onay" >       
+
+            <span>Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmesini onaylıyorum.</span> <br><br>
+
+            <input type="submit" value="Formu Kaydet">
+            <input type="reset" value="Formu Temizle">
+
+    </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Kişisel Bilgiler</b></legend>
+            <div id="grup1">
+                <label for="ID">Form Güvenlik ID:</label>
+                <input type="number" id="ID" name="Form ID" placeholder="ID no giriniz">
+                <br>
+                <label for="isim">İsim :</label>
+                <input class="isim" type="text" id="isim" name="Kullanıcı Adı" placeholder="Lütfen adınızı giriniz">
+                <br>
+                <label for="lastname">Soyad:</label>
+                <input class="lastname" type="text" id="lastname" name="Kullanıcı Soyadı" placeholder="Lütfen soyadınızı giriniz">
+                <br>       
+                <label for="age">Yaşınız:</label>
+                <input class="age" type="number" id="age" name="Yaş" placeholder="Yaşınızı giriniz">
+                <br>          
+                <label for="e-mail">E-mail:</label>
+                <input class="email" type="email" name="E-mail" id="e-mail" placeholder="E-mail giriniz">
+                <br>
+                <label for="foto">Fotoğraf ekle:</label>
+                <input class="foto" type="Foto" id="foto" placeholder="Dosya seç">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Diğer Bilgiler</b></legend>
+            <div id="grup2">
+                <h4>Buradaki alanlar mesleki deneyimi kapsar.</h4>
+                <label for="date">Sektöre Giriş Tarihi:</label>
+                <input type="date" name="tarih" id="date">
+                <br>
+
+                <label for="yıl">Sektör Deneyimi:</label>             
+                <input class="birbeş" type="radio" id="1-5" name="deneyim">
+                <label for="1-5">1-5 yıl</label><br>
+                <input class="altı" type="radio" id="6-10" name="deneyim">
+                <label for="6-10">6-10 yıl</label><br>
+                <input class="onbir" type="radio" id="11-15" name="deneyim">
+                <label for="11-15">11-15 yıl</label><br>
+                <input class="onbeş" type="radio" id="15üzeri" name="deneyim">
+                <label for="15üzeri">15-üzeri </label> 
+                <br>
+
+                <label for="">Programla Dilleri:</label>
+                <select class="pro" name="" id="" size="" multiple>
+                    <option value="C#">C#</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Java">Java</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+
+                                
+            </div>    
+                
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Sözleşme Kopyası</b></legend>
+
+            <div>
+            <label for="sözleşme"></label>
+            <textarea name="girilen_yorum" id="sözleşme"style="width: 50%; height: 150px; resize: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur provident dicta ex praesentium quaerat voluptatibus libero ratione quos harum, id nihil distinctio excepturi, ipsa amet qui vel? Amet nulla repellendus distinctio error dolorem facilis quaerat quos veritatis, ex voluptate laboriosam reprehenderit aliquam quae. Dolorem nostrum aspernatur, dolore atque consequuntur maxime et, accusamus ipsa pariatur veniam hic harum? Beatae soluta eaque asperiores quibusdam distinctio corporis earum eos laboriosam temporibus praesentium! Excepturi saepe velit, omnis laboriosam aspernatur cupiditate doloribus voluptatibus officia dolorum eaque aperiam architecto tempora accusamus voluptatem dicta veritatis adipisci eum repellat eveniet sed quod dolores. Minima cum expedita necessitatibus illo?
+            </textarea>
+
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Mail Listesi</b></legend>
+            <div>
+                <label for="Y">Mail Listesine Katilmak <b>İstiyorum</b></label>
+                <input type="radio" id="Y" name="Mail_onayı"><br>
+                <label for="N">Mail Listesine Katilmak <b>İstemiyorum</b></label>
+                <input type="radio" id="N" name="Mail_onayı">
+            </div>
+
+                
+    
+        </fieldset>
+
+    
+
+    </form>
+    
+    
+</body>
+</html>
